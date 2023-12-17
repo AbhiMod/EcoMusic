@@ -146,7 +146,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     font1 = ImageFont.truetype(r'AM/Helper/resources/robot.otf', 30)
     font2 = ImageFont.truetype(r'AM/Helper/resources/robot.otf', 60)
     font3 = ImageFont.truetype(r'AM/Helper/resources/robot.otf', 49)
-    font4 = ImageFont.truetype(r'AM/Helper/resources/AM.ttf', 35)
+    font4 = ImageFont.truetype(r'AM/Helper/resources/Nexus.ttf', 35)
 
     image4 = ImageDraw.Draw(image2)
     image4.text((10, 10), "AM MUSIC", fill="white", font = font1, align ="left") 
@@ -181,7 +181,7 @@ async def play(_, message: Message):
     global que
     global useer
     
-    lel = await message.reply("**🔎 sᴇᴀʀᴄʜɪɴɢ...**")
+    lel = await message.reply("🚑")
    
     bsdk = message.from_user.mention    
     video = (
