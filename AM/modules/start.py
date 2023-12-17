@@ -44,7 +44,7 @@ HELP_TEXT = """
 START_TEXT = """
 ʜᴇʟʟᴏ {} 
 \n⋆─────────────────────⋆
-Wᴇʟᴄᴏᴍᴇ \n⋆─────────────────────⋆
+ᴍʏ ɴᴀᴍᴇ ɪꜱ {1} \n⋆─────────────────────⋆
 Iᴍᴍᴇʀsᴇ ʏᴏᴜʀsᴇʟғ ɪɴ ᴀ ᴡᴏʀʟᴅ ᴏғ ᴍᴜsɪᴄ ᴡɪᴛʜ ᴛʜɪs ʙᴏᴛ\n⋆─────────────────────⋆
 Dɪsᴄᴏᴠᴇʀ, ᴘʟᴀʏ, ᴀɴᴅ ᴇɴJᴏʏ ʏᴏᴜʀ ғᴀᴠᴏʀɪᴛᴇ ᴛᴜɴᴇs ʀɪɢʜᴛ ʜᴇʀᴇ\n⋆─────────────────────⋆
 Sɪᴍᴘʟʏ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴛʜᴇ sᴏɴɢ ᴏʀ ᴀʀᴛɪsᴛ, ᴀɴᴅ ʟᴇᴛ ᴛʜᴇ ᴍᴇʟᴏᴅʏ ʙᴇɢɪɴ. \n⋆─────────────────────⋆
@@ -73,7 +73,7 @@ button = InlineKeyboardMarkup([
 async def start(_, message):
     await message.reply_photo(
         photo=random.choice(AM_PIC),
-        caption=START_TEXT.format(message.from_user.mention, message.from_user.id),
+        caption=START_TEXT.format(message.from_user.mention,  AM.mention, message.from_user.id),
         reply_markup=button
     )
 @AM.on_callback_query(filters.regex("^help_"))
