@@ -23,7 +23,23 @@ AM_PIC = [
     "https://telegra.ph/file/59a305f8ce0c4e85949cc.jpg"
 ]
 # ------------------------------------------------------------------------------- #
+HELP_TEXT = """
+ʜᴇʟʟᴏ {} 
+\n⋆─────────────────────⋆
+ᴛʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ  ᴄᴏᴍᴍᴀɴᴅs:
 
+⦿ /play ➠ ᴘʟᴀʏs ᴀ sᴏɴɢ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.
+⦿ /vplay  ➠ ᴘʟᴀʏs ᴀ sᴏɴɢ ᴏɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ.
+⦿ /porn  ➠sᴏᴏɴ.
+⦿ /stop ➠ sᴛᴏᴘs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴘʟᴀʏɪɴɢ sᴏɴɢ.
+⦿ /end ➠ ᴇɴᴅs ᴛʜᴇ ᴍᴜsɪᴄ ᴘʟᴀʏʙᴀᴄᴋ.
+⦿ /skip ➠ sᴋɪᴘs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴏɴɢ.
+⦿ /volume ➠ ᴀᴅᴊᴜsᴛs ᴛʜᴇ ᴠᴏʟᴜᴍᴇ ʟᴇᴠᴇʟ.
+⦿ /song ➠ ᴅᴏᴡɴʟᴏᴀᴅ ғᴏʀ ᴀ sᴏɴɢ.
+⦿ /video ➠ ᴅᴏᴡɴʟᴏᴀᴅ ғᴏʀ ᴀ ᴠɪᴅᴇᴏ.
+⦿ /id ➠ ᴅɪsᴘʟᴀʏs ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ ᴏʀ ɢʀᴏᴜᴘ ɪᴅ.
+
+"""
 
 START_TEXT = """
 ʜᴇʟʟᴏ {} 
@@ -64,9 +80,7 @@ async def start(_, message):
 async def help_callback(_, query):
     await query.message.reply_photo(
         photo=random.choice(AM_PIC),
-        caption=START_TEXT.format(query.from_user.mention, query.from_user.id),
-        reply_markup=button
-    )
+        caption=HELP_TEXT.format(message.from_user.mention, message.from_user.id)
 
 @AM.on_message(filters.private & filters.incoming)
 async def on_pm_s(client: Client, message: Message):
