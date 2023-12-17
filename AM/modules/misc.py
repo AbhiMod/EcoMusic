@@ -75,36 +75,6 @@ async def getid(client, message):
 
 
 
-# --------------------------------------------------------------------------------- #
-# --------------------------------------------------------------------------------- #
-
-
-@AM.on_message(filters.video_chat_started)
-async def brah(_, msg):
-       await msg.reply("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ")
-# --------------------------------------------------------------------------------- #
-@AM.on_message(filters.video_chat_ended)
-async def brah2(_, msg):
-       await msg.reply("**ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ**")
-
-# --------------------------------------------------------------------------------- #
-@AM.on_message(filters.video_chat_members_invited)
-async def brah3(AM :AM, message:Message):
-           text = f"{message.from_user.mention} ɪɴᴠɪᴛᴇᴅ "
-           x = 0
-           for user in message.video_chat_members_invited.users:
-             try:
-               text += f"[{user.first_name}](tg://user?id={user.id}) "
-               x += 1
-             except Exception:
-               pass
-           try:
-             await message.reply(f"{text} 😉")
-           except:
-             pass
-
-# --------------------------------------------------------------------------------- #
-
 @AM.on_message(filters.command("leavegroup")& filters.user(OWNER_ID))
 async def bot_leave(_, message):
     chat_id = message.chat.id
