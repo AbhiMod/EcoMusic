@@ -80,7 +80,9 @@ async def start(_, message):
 async def help_callback(_, query):
     await query.message.reply_photo(
         photo=random.choice(AM_PIC),
-        caption=HELP_TEXT.format(message.from_user.mention, message.from_user.id)
+        caption=HELP_TEXT.format(query.from_user.mention, query.from_user.id)  # Fix: Use query instead of message
+    )
+
 
 @AM.on_message(filters.private & filters.incoming)
 async def on_pm_s(client: Client, message: Message):
