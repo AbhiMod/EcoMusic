@@ -9,7 +9,7 @@ BOT_TOKEN = getenv("BOT_TOKEN", "6904399164:AAGIHiKR949SPvl9W92HvXUoRxy_bQ422O4"
 OWNER_ID = int(getenv("OWNER_ID", "5360305806"))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6938549393").split()))
 MONGO_URL = getenv("MONGO_URL", "mongodb+srv://EcoMusic:WeLjC5Tml2Hj69Kb@ecomusic.n1unpgt.mongodb.net/?retryWrites=true&w=majority")
-SESSION_STRING = getenv("SESSION_STRING", "BAAkcM6FsqSIz0of_hYsJUDqroCGnwLIcQnhVbXqaLN1fjGJTmaa2xxteWE6oJ_eBRkm7hKxsMDhZUjQpPs8JDz51vs8svXppAAqvPMOShPpubtBORz6pkvXYRP1LS14Yn1IHRqO3tvzFqXIR_u9lP5DbUoVUHGh4BqnDXl0hsmHhpgBRPgQfVmDtfJDaeByLTmiC4sfG89VzPinN_V4oUw4r0FbFDYHWvzUmuf1188LMBQYddMaHFBUOa2fk4VSlzpkGBcuS-6iOc0dxtBujEoi7G5w_q8bWwawA_iSlCyXHhbmJlDFcIzrEtFsThPTiHVQJiqkUSb5U94O7aNWGWDfAAAAAY_t9d4A")
+SESSION_STRING = getenv("SESSION_STRING", "BACCWCCMXHVMneRVoJZWr2MemGLpMfPZCi6YwDSTrUe-FVOIrVLVYnQg8WkOoRrVwUDzLEnuqNWpknZebp1cXIFO0Usr2HgFWwNyYpd1sRDJbQOM5DGcLeYBFfMqit8m9t_ygwJKeunTQiHJ-jKcOWynUaMGOczuvdAxGm0wUNndcab86YcVYQ1Kg7ck1yFvjSZBitVPekrN7eECGGAb3yfrlEaPSLgxc7lrp_g02nj-z3fMBgO5Rp9iYVTMiThCdqExYH1aJzJI3m53TQ70dz8LSr4k-7vxuEGmtPNyM_9YWF0Sf5eDjHH_9oDfiR-I_N5fARVvEjjRIdnpltSPt8mqAAAAAY_t9d4A")
 CHANNEL = getenv("CHANNEL", "https://t.me/AMBOTYT")
 SUPPORT = getenv("SUPPORT", "https://t.me/AM_YTSUPPORT")
 OWNER_USERNAME = getenv("OWNER_USERNAME","Sanam_King")
