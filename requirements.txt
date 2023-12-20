@@ -1,6 +1,7 @@
-git+https://github.com/kkroening/ffmpeg-python
-py-tgcalls
+ffmpeg-python
+py-tgcalls==1.0.3
 pyrogram
+bs4
 motor
 python-dotenv==1.0.0
 tgcrypto
