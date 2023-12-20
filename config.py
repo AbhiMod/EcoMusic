@@ -5,7 +5,7 @@ from os import getenv
 API_ID = int(getenv("API_ID", "24509589"))
 API_HASH = getenv("API_HASH", "717cf21d94c4934bcbe1eaa1ad86ae75")
 BOT_USERNAME = getenv("BOT_USERNAME", "EcoBaseBot")
-BOT_TOKEN = getenv("BOT_TOKEN", "6904399164:AAGpOAFn_qWy50nPKqabJBglOemXBnpZn3o")
+BOT_TOKEN = getenv("BOT_TOKEN", "6904399164:AAGIHiKR949SPvl9W92HvXUoRxy_bQ422O4")
 OWNER_ID = int(getenv("OWNER_ID", "5360305806"))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6938549393").split()))
 MONGO_URL = getenv("MONGO_URL", "mongodb+srv://EcoMusic:WeLjC5Tml2Hj69Kb@ecomusic.n1unpgt.mongodb.net/?retryWrites=true&w=majority")
