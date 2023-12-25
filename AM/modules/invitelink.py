@@ -1,4 +1,4 @@
-from AM import app
+from AM import AM as app
 from pyrogram import Client, filters
 from pyrogram.errors import ChatIdInvalid
 from pyrogram.errors import ChatAdminRequired, ChatNotModified, ChatIdInvalid, FloodWait, InviteHashExpired, UserNotParticipant
